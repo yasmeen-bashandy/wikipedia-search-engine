@@ -11,15 +11,19 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <nav>
+     <nav>
         <h2>Wikipedia Search Engine</h2>
         <div class="search">
-            <input type="text" onkeyup='validateInput(this)' placeholder="Looking for something ?"/>
+          <input
+            type="text"
+            onkeyup="debounceSearch(this)"
+            placeholder="Looking for something ?"
+          />
         </div>
-    </nav>
-    <div class="container">
+      </nav>
+      <div class="container">
         <p>Type something in the above search input</p>
-    </div>
+      </div>
 </body>
 <script src="./script.js"></script>
 </html>
